@@ -15,9 +15,12 @@ def v():
     if inp == "var >> {var}":
         inp = input("Variable >> ")
         var = inp
+        variableV = ""
+        inp = input("Value >>")
+        variableV = inp
         inp = input("te >> ")
     if inp ==  "print >> {" + var + "}":
-        print(var)
+        print(variableV)
         inp = input("te >> ")
 
 v()
